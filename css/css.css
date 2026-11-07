@@ -139,3 +139,12 @@ body {
   line-height: 1.8;
   font-size: 1rem;
 }
+.raza-item h2 a {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: 700;
+
+  text-shadow:
+    0 2px 4px rgba(255, 255, 255, 0.4),
+    0 1px 8px rgba(0, 0, 0, 0.15);
+}
