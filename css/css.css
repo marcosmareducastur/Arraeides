@@ -1,6 +1,3 @@
-/* ==========================
-   PALETA ARENA Y CREMA
-========================== */
 :root {
   --color-crema: #f8f1e5;
   --color-arena-claro: #e8d4b0;
@@ -10,9 +7,6 @@
   --color-blanco: #fffdf8;
 }
 
-/* ==========================
-   NAVBAR
-========================== */
 .navbar-custom {
   position: sticky;
   top: 15px;
@@ -41,9 +35,6 @@
     0 8px 20px rgba(90, 70, 50, 0.15);
 }
 
-/* ==========================
-   LOGO
-========================== */
 .navbar-brand {
   color: var(--color-arena-oscuro) !important;
   font-weight: 700;
@@ -51,9 +42,6 @@
   letter-spacing: 1px;
 }
 
-/* ==========================
-   LINKS
-========================== */
 .navbar-custom .nav-link {
   color: var(--color-texto);
   font-weight: 600;
@@ -77,9 +65,6 @@
   color: var(--color-blanco);
 }
 
-/* ==========================
-   BOTÓN MOBILE
-========================== */
 .navbar-toggler {
   border: 2px solid var(--color-arena);
   border-radius: 12px;
@@ -89,9 +74,6 @@
   box-shadow: none;
 }
 
-/* ==========================
-   RESPONSIVE
-========================== */
 @media (max-width: 992px) {
   .navbar-custom {
     margin: 10px;
@@ -118,4 +100,42 @@ body {
     linear-gradient(135deg, #f7f3eb, #e9d8ba, #c8a97e, #8b7355);
 
   background-attachment: fixed;
+}
+.lista-razas {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.raza-item {
+  padding: 25px 0;
+  border-bottom: 2px solid rgba(184, 149, 106, 0.3);
+}
+
+.raza-item:last-child {
+  border-bottom: none;
+}
+
+.raza-item h2 {
+  margin-bottom: 10px;
+}
+
+.raza-item h2 a {
+  color: var(--color-arena-oscuro);
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.raza-item h2 a:hover {
+  color: var(--color-texto);
+  text-shadow: 0 2px 10px rgba(184, 149, 106, 0.4);
+}
+
+.raza-item p {
+  margin: 0;
+  color: var(--color-texto);
+  line-height: 1.8;
+  font-size: 1rem;
 }
