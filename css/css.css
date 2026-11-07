@@ -148,3 +148,156 @@ body {
     0 2px 4px rgba(255, 255, 255, 0.4),
     0 1px 8px rgba(0, 0, 0, 0.15);
 }
+.lenguas-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.lengua {
+  background: rgba(248, 241, 229, 0.85);
+
+  border: 2px solid var(--color-arena-claro);
+
+  border-radius: 20px;
+
+  margin-bottom: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 25px rgba(90, 70, 50, 0.12),
+    0 4px 10px rgba(90, 70, 50, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.lengua:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 15px 35px rgba(90, 70, 50, 0.18),
+    0 8px 15px rgba(90, 70, 50, 0.12);
+}
+
+.lengua summary {
+  list-style: none;
+
+  cursor: pointer;
+
+  padding: 18px 25px;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  color: var(--color-arena-oscuro);
+
+  transition: all 0.3s ease;
+}
+.lenguas-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.lengua {
+  position: relative;
+
+  margin-bottom: 22px;
+
+  background: rgba(248, 241, 229, 0.88);
+
+  backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(210, 180, 140, 0.5);
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 15px 35px rgba(90, 70, 50, 0.12),
+    0 5px 15px rgba(90, 70, 50, 0.08);
+
+  transition: all 0.35s ease;
+}
+
+.lengua:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 20px 40px rgba(90, 70, 50, 0.18),
+    0 8px 18px rgba(90, 70, 50, 0.12);
+}
+
+.lengua summary {
+  list-style: none;
+
+  cursor: pointer;
+
+  padding: 22px 28px;
+
+  font-size: 1.35rem;
+  font-weight: 700;
+
+  color: var(--color-arena-oscuro);
+
+  transition: all 0.3s ease;
+}
+
+.lengua summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Flecha */
+.lengua summary::after {
+  content: "▼";
+
+  float: right;
+
+  font-size: 0.9rem;
+
+  transition: transform 0.3s ease;
+}
+
+.lengua[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.lengua summary:hover {
+  background: rgba(210, 180, 140, 0.2);
+}
+
+.lengua[open] summary {
+  background: var(--color-arena);
+
+  color: var(--color-blanco);
+}
+
+.lengua p {
+  margin: 0;
+
+  padding: 25px 30px;
+
+  color: var(--color-texto);
+
+  line-height: 1.8;
+
+  border-top: 1px solid rgba(184, 149, 106, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .lenguas-container {
+    padding: 10px;
+  }
+
+  .lengua summary {
+    font-size: 1.15rem;
+    padding: 18px 22px;
+  }
+
+  .lengua p {
+    padding: 20px;
+  }
+}
